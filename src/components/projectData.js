@@ -1,8 +1,8 @@
 export const projects = [
   {
-    slug: 'voyage',
+    slug: 'Queen-Ride',
     number: '01',
-    title: 'Voyage',
+    title: 'Queen Ride',
     type: 'Ride-Hailing App',
     description:
       'A next-generation mobility-as-a-service platform optimizing ride experiences with AI-driven routing, dynamic pricing, and a seamless digital interface. Designed for drivers and passengers.',
