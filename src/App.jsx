@@ -3,6 +3,7 @@ import Lenis from 'lenis'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
+import BottomBar from './components/BottomBar'
 
 const App = () => {
   useEffect(() => {
@@ -32,6 +33,7 @@ const App = () => {
     <Navbar/>
     <Sidebar/>
     <Hero/>
+    <BottomBar/>
   </div>
   )
 }
