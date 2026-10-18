@@ -1,0 +1,123 @@
+.site-footer {
+  position: relative;
+  z-index: 1;
+  color: #edf0e9;
+  background: #111817;
+}
+
+.site-footer__inner {
+  width: min(1100px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.site-footer__top,
+.site-footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.site-footer__top {
+  min-height: 124px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.site-footer__brand {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 750;
+  letter-spacing: -0.07em;
+}
+
+.site-footer__brand span {
+  color: #b8e51f;
+}
+
+.site-footer__top > p {
+  margin: 0;
+  color: rgba(237, 240, 233, 0.62);
+  font-size: 14px;
+}
+
+.site-footer__social {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #edf0e9;
+  font-size: 13px;
+  transition: color 180ms ease;
+}
+
+.site-footer__social img {
+  width: 18px;
+  height: 18px;
+  filter: brightness(0) invert(1);
+}
+
+.site-footer__social:hover,
+.site-footer__bottom a:hover {
+  color: #b8e51f;
+}
+
+.site-footer__bottom {
+  min-height: 78px;
+}
+
+.site-footer__bottom p {
+  margin: 0;
+  color: rgba(237, 240, 233, 0.53);
+  font-size: 12px;
+}
+
+.site-footer__bottom nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.site-footer__bottom a {
+  color: rgba(237, 240, 233, 0.78);
+  font-size: 12px;
+  transition: color 180ms ease;
+}
+
+.site-footer__top-link {
+  white-space: nowrap;
+}
+
+@media (max-width: 700px) {
+  .site-footer__inner {
+    width: calc(100% - 36px);
+  }
+
+  .site-footer__top {
+    min-height: 0;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+    padding: 26px 0;
+  }
+
+  .site-footer__top > p {
+    font-size: 13px;
+  }
+
+  .site-footer__bottom {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+    padding: 22px 0 26px;
+  }
+
+  .site-footer__bottom nav {
+    gap: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-footer__social,
+  .site-footer__bottom a {
+    transition: none;
+  }
+}

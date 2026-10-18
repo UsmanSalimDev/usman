@@ -1,5 +1,6 @@
 import { useLayoutEffect, useRef, useState } from 'react'
 import gsap from 'gsap'
+import { Link } from 'react-router-dom'
 import logo from '../assets/logo.png'
 
 const Navbar = () => {
@@ -36,15 +37,21 @@ const Navbar = () => {
     }
   }, [isOpen])
 
-  const links = ['Home', 'About', 'Projects', 'Contact']
+  const links = [
+    { label: 'Home', target: 'home' },
+    { label: 'About', target: 'about' },
+    { label: 'Tech Stack', target: 'tech-stack' },
+    { label: 'Projects', target: 'projects' },
+    { label: 'Contact', target: 'contact' },
+  ]
 
   return (
     <header className="fixed left-0 top-0 z-50 w-full border-b border-black/5 bg-white/80 backdrop-blur-xl">
       <div className="relative mx-auto w-[91%]  py-3">
         <div className="flex items-center justify-between">
-          <a href="#home" aria-label="Go to home" onClick={() => setIsOpen(false)}>
+          <Link to="/#home" aria-label="Go to home" onClick={() => setIsOpen(false)}>
             <img src={logo} alt="Logo" className="h-14 w-auto object-contain md:h-16" />
-          </a>
+          </Link>
           <button
             type="button"
             aria-label={isOpen ? 'Close navigation menu' : 'Open navigation menu'}
@@ -74,15 +81,15 @@ const Navbar = () => {
               <p className="mb-5 text-xs font-medium uppercase tracking-[0.3em] text-white/45">Explore</p>
               <ul className="space-y-1">
                 {links.map((link, index) => (
-                  <li key={link} data-menu-item>
-                    <a
-                      href={`#${link.toLowerCase()}`}
+                  <li key={link.target} data-menu-item>
+                    <Link
+                      to={`/#${link.target}`}
                       onClick={() => setIsOpen(false)}
                       className="flex items-baseline gap-4 py-1 text-3xl font-semibold tracking-tight transition-colors hover:text-white/60 sm:text-4xl"
                     >
                       <span className="text-xs font-normal text-white/35">0{index + 1}</span>
-                      {link}
-                    </a>
+                      {link.label}
+                    </Link>
                   </li>
                 ))}
               </ul>

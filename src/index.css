@@ -12,12 +12,12 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ef4444;
+  background: #C3EB18;
   border-radius: 6px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #dc2626;
+  background: #C3EB18;
 }
 
 /* Smooth scroll behavior for Lenis */
@@ -27,7 +27,7 @@ html {
 
 /* Selection color */
 ::selection {
-  background-color: #ef4444;
+  background-color: #C3EB18;
   color: #ffffff;
 }
 
