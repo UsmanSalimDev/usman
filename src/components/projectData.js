@@ -10,13 +10,13 @@ export const projects = [
     year: '2026',
   },
   {
-    slug: 'project-two',
+    slug: 'auren-attars',
     number: '02',
-    title: 'Project 2',
-    type: 'Mobility Platform',
+    title: 'Auren Attars',
+    type: 'E-Commerce Store',
     description:
-      'A next-generation mobility-as-a-service platform optimizing ride experiences with AI-driven routing and a seamless digital interface.',
-    highlights: ['Responsive experience', 'User-first design'],
+      'A premium fragrance and luxury attar brand offering long-lasting, alcohol-free scents, rich oriental blends, and exquisite signature perfumes crafted for a lasting impression.',
+    highlights: ['Luxury fragrance collection', 'Alcohol-free & long-lasting', 'Responsive experience'],
     year: '2026',
   },
   {

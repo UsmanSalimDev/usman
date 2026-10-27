@@ -4,11 +4,11 @@ import techStackImage from '../assets/techstack.jpg'
 import './TechStack.css'
 
 const skillGroups = [
-  { name: 'Frontend', skills: 'React, Redux, Next.js, TypeScript, JavaScript' },
-  { name: 'Backend', skills: 'Node.js, Express, Nest.js, Python, Go' },
-  { name: 'Database', skills: 'PostgreSQL, MongoDB, DynamoDB, Redis, Firebase' },
-  { name: 'Cloud', skills: 'AWS, GCP, Vercel, Docker, Kubernetes' },
-  { name: 'Dev Tools', skills: 'Git, Jenkins, GitHub Actions, CI/CD, Terraform' },
+  { name: 'Frontend', skills: 'React, Redux, JavaScript, Nextjs' },
+  { name: 'Backend', skills: 'Node.js, Express' },
+  { name: 'Database', skills: ' MongoDB, Redis, Firebase ' },
+  { name: 'Cloud', skills: 'AWS, Vercel, Docker' },
+  { name: 'Dev Tools', skills: 'Git, GitHub Actions, CI/CD' },
 ]
 
 const TechStack = () => {
